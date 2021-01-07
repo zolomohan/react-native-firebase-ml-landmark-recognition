@@ -43,10 +43,11 @@ export default function App() {
       </View>
       {landmarks.map((item, i) => (
         <View style={{ marginTop: 20, width: 300 }} key={i}>
-          <Text>LandMark: {item.landmark}</Text>
-          <Text>BoundingBox: {JSON.stringify(item.boundingBox)}</Text>
+          <Text>Landmark: {item.landmark}</Text>
+          <Text>Bounding Box: {JSON.stringify(item.boundingBox)}</Text>
           <Text>Coordinates: {JSON.stringify(item.locations)}</Text>
           <Text>Confidence: {item.confidence}</Text>
+          <Text>Entity Id: {item.entityId}</Text>
         </View>
       ))}
     </ScrollView>
